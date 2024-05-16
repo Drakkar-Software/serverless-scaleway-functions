@@ -26,7 +26,7 @@ const RUNTIMES_EXTENSIONS = {
 const REGION_LIST = ["fr-par", "nl-ams", "pl-waw"];
 
 const cronScheduleRegex = new RegExp(
-  /^((((\d+,)+\d+|(\d+(\/|-)\d+)|\d+|\*) ?){5,7})$/
+  /^((\d+|\*|\*\/\d+|(\d+,\d+)+|\d+(\/|-)\d+)( +|$)){5,7}$/
 );
 
 const TRIGGERS_VALIDATION = {
